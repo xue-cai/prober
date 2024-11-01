@@ -1,17 +1,12 @@
 # Instructions
 
-1. Install k6
-```
-brew install k6
-```
-
-2. Set up API key
+1. Set up API key
 ```
 export TOGETHER_API_KEY=<your-api-key>
 
 ```
 
-3. Set up API URL, choose one of the following:
+2. Set up API URL, choose one of the following:
 ```
 export TOGETHER_API_URL='https://api-edge.together.ai/v1/chat/completions'
 
@@ -20,6 +15,20 @@ export TOGETHER_API_URL='https://curiouscrow.api.together.ai/v1/chat/completions
 
 # If you are on US East, use this url
 export TOGETHER_API_URL='https://happypiglet.api.together.ai/v1/chat/completions'
+```
+
+## Probe with curl (not recommended)
+The script contains a basic curl command for you to play with,
+but it doesn't calculate any statistics.
+```
+./prober.sh
+```
+
+## Probe with k6 (recommended)
+
+3. Install k6
+```
+brew install k6
 ```
 
 4. Run the script
